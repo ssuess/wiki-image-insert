@@ -12,3 +12,11 @@ Chrome extension to facilitate Wikimedia Commons image search and insert when ed
 3. Click on extension icon in your toolbar (assuming you activated and pinned the extension there)
 4. Search for your image, page next if you don't find one to your liking in the first 10
 5. Click on the image you want to use, it will be placed in your source code, and you can further edit the caption text there.
+
+## Demo
+<video width="100%" controls>
+  <source src="demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
