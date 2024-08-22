@@ -14,10 +14,7 @@ Chrome extension to facilitate Wikimedia Commons image search and insert when ed
 5. Click on the image you want to use, it will be placed in your source code, and you can further edit the caption text there.
 
 ## Demo
-<video width="100%" controls>
-  <source src="./demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[Watch the Demo Video](demo.mp4)
 
 
 
