@@ -14,7 +14,6 @@ Chrome extension to facilitate Wikimedia Commons image search and insert when ed
 5. Click on the image you want to use, it will be placed in your source code, and you can further edit the caption text there.
 
 ## Demo
-[Watch the Demo Video](demo.mp4)
-
+[Download the Demo Video](https://github.com/ssuess/wiki-image-insert/raw/main/demo.mp4)
 
 
