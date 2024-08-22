@@ -15,8 +15,9 @@ Chrome extension to facilitate Wikimedia Commons image search and insert when ed
 
 ## Demo
 <video width="100%" controls>
-  <source src="demo.mp4" type="video/mp4">
+  <source src="./demo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
 
 
