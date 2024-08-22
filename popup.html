@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 400px;
+    }
+
+    .search-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      padding: 8px;
+    }
+
+    #searchQuery {
+      flex-grow: 1;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    #searchQuery:focus {
+      border-color: #6200ea;
+    }
+
+    #searchButton {
+      margin-left: 8px;
+      padding: 10px 16px;
+      background-color: #6200ea;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      position: relative;
+    }
+
+    #searchButton:hover {
+      background-color: #3700b3;
+    }
+
+    #loadingSpinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 15px;
+      height: 15px;
+      margin: -10px 0 0 -10px;
+      border: 3px solid #fff;
+      border-top: 3px solid #6200ea;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      display: none;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    #results img {
+      max-width: 50%;
+      width: calc(50% - 14px);
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 4px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      border: 2px solid white;
+    }
+
+    #results img:hover {
+      border: 2px solid #666;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+    }
+
+    .pagination button {
+      padding: 8px 12px;
+      background-color: #6200ea;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .pagination button:disabled {
+      background-color: #bbb;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <input type="text" id="searchQuery" placeholder="Search Wikimedia Commons..." />
+    <button id="searchButton">
+      <span id="stext">Search</span>
+      <div id="loadingSpinner"></div>
+    </button>
+  </div>
+  <div id="results"></div>
+  <div class="pagination">
+    <button id="prevButton" disabled>Back</button>
+    <button id="nextButton" disabled>Next</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
